@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    width: 70%;
+    box-shadow: 0 0 40px 2px gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+#main div.title{
+    width: 30%;
+    
+}
+#main div.title p{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+#main .log-in{
+    width: 70%;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+#main .log-in .form-name{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;  
+    margin-bottom: 30px;
+}
+#main .log-in form{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;   
+}
+#main .log-in form label{
+    font-weight: bolder;
+}
+#main .log-in form input{
+    height: 60px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.log-in form p{
+    text-align: right;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 12px; */
+}
+.log-in form p a{
+    text-decoration: none;
+    color: blue
+}
+.log-in form button{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    margin: 30px auto 0px;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.cover-layer{
+    background-color: #C2C2C2;
+    width: 36%;
+    height: 95vh;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* create reponsive */
+@media screen  and (max-width: 1200px){
+    #main div.title p{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    #main .log-in form p{
+        font-size: 14px;
+    }
+    #main .log-in form button{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 780px) {
+    #main .log-in .form-name{
+        font-size: 28px;
+    }
+    #main .log-in form p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 650px) {
+    #main{
+        flex-direction: column;
+    }
+    .cover-layer{
+        width: 100vw;
+        height: 150px;
+    }
+    #main div.title{
+        width: 100%;
+    }
+    #main div.title p{
+        width: 100%;
+        font-size: 25px;
+        line-height: 100px;
+    }
+    #main .log-in form{
+        width: 100%;
+    }
+    
+}

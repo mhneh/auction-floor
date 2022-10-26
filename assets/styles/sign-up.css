@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    width: 70%;
+    box-shadow: 0 0 40px 2px gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+#main div.title{
+    width: 30%;
+    /* box-sizing: border-box; */
+}
+#main div.title p{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+#main .register{
+    width: 70%;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+#main .register .form-name{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;  
+    margin-bottom: 20px;
+}
+#main .register form{
+    display: flex;
+    flex-direction: column; 
+    width: 80%;
+    margin: 0 auto;  
+}
+#main .register form label{
+    font-weight: bolder;
+}
+#main .register form input{
+    height: 50px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.register form p{
+    text-align: right;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 12px; */
+}
+.register form p a{
+    text-decoration: none;
+    color: blue
+}
+.register form button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    margin: 20px auto 0px;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.cover-layer{
+    background-color: #C2C2C2;
+    width: 36%;
+    height: 95vh;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* create reponsive */
+@media screen  and (max-width: 1200px){
+    #main div.title p{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    #main .register form p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 800px) {
+    body{
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+   
+   #main div.title{
+    width: 100%;
+   }
+   #main div.title p{
+    width: 100%;
+    font-size: 25px;
+    line-height: 150px;
+   }
+   #main .register form{
+    width: 100%;
+   } 
+   .register form button{
+    width: 60%;
+    font-size: 20px;
+   }
+   .cover-layer{
+    width: 100%;
+    height: 30vh;
+   }
+   #main{
+    position: absolute;
+    top: 65%;
+    flex-direction: column;
+    }
+    #main .register form p{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 560px) {
+    #main div.title p{
+        font-size: 20px;
+    }
+    #main .register .form-name{
+        font-size: 25px;
+    }
+    #main .register form p{
+        font-size: 11px;
+    }
+    #main .register form button{
+        font-size: 20px;
+    }
+}
